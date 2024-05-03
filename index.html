@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login page</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <div class="formbox">
+        <div class="formboxx">
             <h1 class="title">Sign up</h1>
-            <div class="underline"></div>
-            <form action="">
+           
+           
                 <div class="input-group">
                     <div class="input-field name-field">
                         <i class="fa-regular fa-user"></i>
@@ -20,26 +20,45 @@
 
                     </div>
 
-                    <!-- <div class="input-group"> -->
+                   
                         <div class="input-field">
                             <i class="fa-solid fa-at"></i>
                             <input type="email" placeholder="email">
-    
+
                         </div>
 
-                        <!-- <div class="input-group"> -->
+                       
                             <div class="input-field">
                                 <i class="fa-solid fa-key"></i>
                                 <input type="password" placeholder="password">
-        
+
                             </div>
-                            <p>password suggestion <a href="#">Click here!</a></p>
+                            <p class="suggestion">password suggestion <a href="#">Click here!</a></p>
                 </div>
                 <div class="btn-field">
                     <button type="submit" class="sign-up" >Sign up</button>
-                    <button type="submit" class="disable sign-in" >Sign in</button>
+                   
+                    <button class="sign-in" onclick="redirectToSignIn()">Sign In</button>
+
+<script>
+  function redirectToSignIn() {
+    window.location.href = "./signin.html";
+  }
+</script>
+                       
+                              
                 </div>
-            </form>
+                <div class="logos">
+                    <div class="google">
+                        
+                        <p class="gf">   <i class="fa-brands fa-google"></i>  Sign in with google   </p>
+                    </div>
+                    <div class="fb">
+                        <p class="gf"><i class="fa-brands fa-facebook"></i> Sign in with facebook</p>
+                    </div> 
+                   </div>
+                </div>
+         
         </div>
 
     </div>
